@@ -4,7 +4,7 @@ const cors = require('cors');
 
 const app = express();
 
-const { PORT = 3002, LOCAL_ADDRESS = '0.0.0.0' } = process.env
+const { PORT=3002, LOCAL_ADDRESS='0.0.0.0' } = process.env
 
 app.use(cors());
 app.use(express.json());
@@ -16,7 +16,7 @@ app.get("/api/roles/get", (req, res) => {
 		if (err) {
 			throw (err);
 		}
-		res.json({ roles: result[0].roles });
+		res.json({roles: result[0].roles});
 	});
 });
 
@@ -139,6 +139,5 @@ app.post('/api/role/get', (req, res) => {
 })
 
 app.listen(PORT, LOCAL_ADDRESS, () => {
-	const address = server.address();
-	console.log('server listening at', address);
+	console.log(`Server is running on ${PORT}`)
 })
