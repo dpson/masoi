@@ -1,0 +1,60 @@
+.main{
+	position: relative;
+	min-height: 100vh;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+
+.form{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.row .label{
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.row > input{
+	border: unset;
+	padding: 5px 10px;
+	color: #888;
+	font-size: 16px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.row > textarea{
+    height: 110px;
+   	width: 95%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.form .button{
+    border: unset;
+    width: 100%;
+	border-radius: 3px;
+	padding: 10px 15px;
+	text-align: center;
+	color: #fff;
+	background-color: #1877f2;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
