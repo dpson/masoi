@@ -23,9 +23,7 @@
 		"web-vitals": "^1.1.2"
 	},
 	"scripts": {
-		"start": "concurrently \"npm server\" \"npm react\"",
-		"react": "react-scripts start",
-		"server": "node ./server/index.js"
+		"start": "start react-scripts start && start node ./server/index.js"
 	},
 	"eslintConfig": {
 		"extends": [
