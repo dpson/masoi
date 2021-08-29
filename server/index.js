@@ -138,6 +138,12 @@ app.post('/api/role/get', (req, res) => {
 	})
 })
 
+
+const path = require('path');
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/index.html'));
+  });
+
 app.listen(PORT, LOCAL_ADDRESS, () => {
 	console.log(`Server is running on ${PORT}`)
 })
